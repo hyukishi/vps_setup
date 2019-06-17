@@ -3,6 +3,7 @@
 - 项目: https://git.io/vps.us 　　 https://git.io/winkcp
 - [蘭雅sRGB![](https://raw.githubusercontent.com/hongwenjun/vps_setup/master/img/youtube.png)频道](https://www.youtube.com/channel/UCupRwki_4n87nrwP0GIBUXA/videos) &nbsp;&nbsp;&nbsp;可以观看相关脚本工具的演示视频!
 - 脚本: https://git.io/vps.sh 　　 https://git.io/wgmtu 　　 https://git.io/v2ray.ss
+- 防火墙脚本: https://git.io/fhUSe 　　 路由器脚本: https://git.io/sskcp.sh
 
 ### 网友视频和白话文档
 - 白话文档: [OpenWRT配置](https://git.io/wrt.wg) 　 [Nginx反代配置原理](https://git.io/v2ray.nginx)
