@@ -8,3 +8,28 @@
 ### 网友视频和白话文档
 - 白话文档: [OpenWRT配置](https://git.io/wrt.wg) 　 [Nginx反代配置原理](https://git.io/v2ray.nginx)
 - 网友视频: [三剑客](https://youtu.be/BHZhU8wxf9A) 　 [PC_MAC_手机客户端](https://youtu.be/dkXWicxak3w)
+
+
+### 编程语言群，有兴趣学脚本朋友  @codeblocks
+- 欢迎加入Telegram电报群：https://t.me/codeblobks
+
+- C/C++ 个人学习源码，中文注释
+- https://github.com/hongwenjun/srgb
+
+- linux笔记(全中文笔记Fork，源已删除)
+- https://github.com/hongwenjun/linux
+
+- linux vim bash 脚本学习笔记
+- https://git.io/vps.us
+
+- Debian 轻量级服务设置脚本 (学习脚本挺好)
+- https://github.com/Xeoncross/lowendscript
+
+- openwrt-luci-kcp-udp 软件包
+- https://git.io/openwrt
+
+- Windows udp2raw+kcptun 加速tcp流量 简易工具
+- https://git.io/winkcp
+
+- 浙江A级景区名单 (简单python示例)
+- https://github.com/hongwenjun/zjajq
