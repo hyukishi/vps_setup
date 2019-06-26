@@ -11,25 +11,15 @@
 
 
 ### 编程语言群，有兴趣学脚本朋友  @codeblocks
-- 欢迎加入Telegram电报群：https://t.me/codeblobks
-
-- C/C++ 个人学习源码，中文注释
-- https://github.com/hongwenjun/srgb
+### 欢迎加入Telegram电报群：https://t.me/codeblobks
 
 - linux笔记(全中文笔记Fork，源已删除)
 - https://github.com/hongwenjun/linux
 
-- linux vim bash 脚本学习笔记
-- https://git.io/vps.us
 
 - Debian 轻量级服务设置脚本 (学习脚本挺好)
 - https://github.com/Xeoncross/lowendscript
 
+
 - openwrt-luci-kcp-udp 软件包
 - https://git.io/openwrt
-
-- Windows udp2raw+kcptun 加速tcp流量 简易工具
-- https://git.io/winkcp
-
-- 浙江A级景区名单 (简单python示例)
-- https://github.com/hongwenjun/zjajq
