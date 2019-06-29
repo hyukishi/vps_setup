@@ -1,4 +1,4 @@
-### [简体中文](https://github.com/hongwenjun/vps_setup/blob/master/README.md) | [English](https://git.io/vps.english)  https://git.io/vps.english
+- [简体中文](https://github.com/hongwenjun/vps_setup/blob/master/README.md)  [English](https://git.io/vps.english)
 - 欢迎加入编程语言群 Telegram 电报群：https://t.me/codeblobks
 ----
 ## 我們雖然窮，但是不能說謊，也不能打人；不是我們的東西，我們不能拿；要好好讀書，長大要做個對社會有用的人。
