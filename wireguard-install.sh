@@ -1,45 +1,18 @@
 #!/bin/bash
-# WireGuard  installer for Ubuntu 18.04 LTS, Debian 9 and CentOS 7.
+# WireGuard installer for Raspbian Jessie.
 
-# Usage:  wget -qO- https://git.io/wireguard.sh | bash
+# Usage:  bash< (curl -L -s https://raw.githubcontent.com/hyukishi/vps_setup/wireguard-install.sh) [port]
+# If a port is not specified in the command line, a port will be chose at random.
 
 # This script will let you setup your own VPN server in no more than a minute, even if you haven't used WireGuard before.
-# It has been designed to be as unobtrusive and universal as possible.
+# It has been designed to be as unobtrusive as possible.
 
 wireguard_install(){
-    if [ -e /etc/centos-release ]; then
-        DISTRO="CentOS"
-    elif [ -e /etc/debian_version ]; then
-        DISTRO=$( lsb_release -is )
-    else
-        echo "Your distribution is not supported (yet)"
-        exit
-    fi
 
-    if [ "$DISTRO" == "Ubuntu" ]; then
-        apt update
-        apt install software-properties-common -y
-        echo .read | add-apt-repository ppa:wireguard/wireguard
-        apt update
-        apt install linux-headers-$(uname -r) wireguard resolvconf qrencode -y
-
-    elif [ "$DISTRO" == "Debian" ]; then
         echo "deb http://deb.debian.org/debian/ unstable main" > /etc/apt/sources.list.d/unstable.list
         printf 'Package: *\nPin: release a=unstable\nPin-Priority: 90\n' > /etc/apt/preferences.d/limit-unstable
         apt update
-        apt install linux-headers-$(uname -r) wireguard resolvconf qrencode -y
-
-    elif [ "$DISTRO" == "CentOS" ]; then
-        curl -Lo /etc/yum.repos.d/wireguard.repo https://copr.fedorainfracloud.org/coprs/jdoss/wireguard/repo/epel-7/jdoss-wireguard-epel-7.repo
-        yum install -y epel-release
-        yum install -y wireguard-dkms wireguard-tools
-        yum -y install qrencode iptables-services
-
-        systemctl stop firewalld  && systemctl disable firewalld
-        systemctl enable iptables && systemctl start iptables
-        iptables -F  && service iptables save && service iptables restart
-
-    fi
+        apt install wireguard resolvconf qrencode raspberrypi-kernel-headers dirmngr -y
 
     mkdir -p /etc/wireguard
     cd /etc/wireguard
