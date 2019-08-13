@@ -1,7 +1,7 @@
 # Three-in-One-Step Automated Install WireGuard Shadowsocks V2Ray on Server
 
 ```
-bash< (curl -L -s https://raw.githubusercontent.com/hyukishi/vps_setup/english/wireguard-install.sh) [port]
+bash< $(curl -L -s https://raw.githubusercontent.com/hyukishi/vps_setup/english/wireguard-install.sh) [port]
 ```
 ![](https://raw.githubusercontent.com/hongwenjun/vps_setup/master/img/vps.english.png)
 ------
@@ -14,7 +14,7 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 
 ```
 # Custom Port Install WireGuard Script (port 9999 is used as the example on the next line)
-bash< (curl -L -s https://raw.githubusercontent.com/hyukishi/vps_setup/english/wireguard-install.sh) 9999
+bash< $(curl -L -s https://raw.githubusercontent.com/hyukishi/vps_setup/english/wireguard-install.sh) 9999
 ```
 
 [WireGuard](https://www.wireguard.com) installer for Ubuntu 18.04 LTS, Debian 9 and CentOS 7.
