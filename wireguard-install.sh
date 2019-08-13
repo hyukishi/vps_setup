@@ -1,7 +1,7 @@
 #!/bin/bash
 # WireGuard installer for Raspbian Jessie.
 
-# Usage:  bash< (curl -L -s https://raw.githubcontent.com/hyukishi/vps_setup/wireguard-install.sh) [port]
+# Usage:  bash< (curl -L -s https://raw.githubusercontent.com/hyukishi/vps_setup/english/wireguard-install.sh) [port]
 # If a port is not specified in the command line, a port will be chose at random.
 
 # This script will let you setup your own VPN server in no more than a minute, even if you haven't used WireGuard before.
