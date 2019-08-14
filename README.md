@@ -5,7 +5,7 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 ### WireGuard Install
 
 ```
-# Custom Port Install WireGuard Script (port 9999 used as an example on the next 2 lines. Line 1 use eth0. Line 2 use wlan0)
+# Custom Port Install WireGuard Script (port 9999 used as an example on the next 2 lines. Line 1 uses eth0. Line 2 uses wlan0.)
 bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-eth0.sh) 9999
 bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-wlan0.sh) 9999
 ```
