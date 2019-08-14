@@ -1,7 +1,11 @@
 # Three-in-One-Step Automated Install WireGuard Shadowsocks V2Ray on Server
 
 ```
+If using wlan0 for the connected interface
 bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install.sh) [port]
+
+If using eth0 for the connected interface
+bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-eth0.sh) [port]
 ```
 ![](https://raw.githubusercontent.com/hongwenjun/vps_setup/master/img/vps.english.png)
 ------
