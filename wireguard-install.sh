@@ -110,7 +110,7 @@ wg genkey | tee cprivatekey | wg pubkey > cpublickey
 cat <<EOF >wg0.conf
 [Interface]
 PrivateKey = $(cat sprivatekey)
-Address = 10.0.0.1/24,  ${ipv6_range}1/64
+Address = 10.7.0.1/24,  ${ipv6_range}1/64
 PostUp   = iptables -I FORWARD -i wg0 -j ACCEPT; iptables -I FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT; ip6tables -I FORWARD -i wg0 -j ACCEPT; ip6tables -I FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 PostDown = iptables -D FORWARD -i wg0 -j ACCEPT; iptables -D FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT; ip6tables -D FORWARD -i wg0 -j ACCEPT; ip6tables -D FORWARD -m state --state RELATED,ESTABLISHED -j ACCEPT
 ListenPort = $port
@@ -119,7 +119,7 @@ MTU = $mtu
 
 [Peer]
 PublicKey = $(cat cpublickey)
-AllowedIPs = 10.0.0.188/32,  ${ipv6_range}188
+AllowedIPs = 10.7.0.188/32,  ${ipv6_range}188
 
 EOF
 
@@ -127,7 +127,7 @@ EOF
 cat <<EOF >client.conf
 [Interface]
 PrivateKey = $(cat cprivatekey)
-Address = 10.0.0.188/24,  ${ipv6_range}188/64
+Address = 10.7.0.188/24,  ${ipv6_range}188/64
 DNS = 8.8.8.8, 2001:4860:4860::8888
 #  MTU = $mtu
 #  PreUp =  start   .\route\routes-up.bat
@@ -144,7 +144,7 @@ EOF
 # Add 2-9 multi-user configuration
 for i in {2..9}
 do
-    ip=10.0.0.${ip_list[$i]}
+    ip=10.7.0.${ip_list[$i]}
     ip6=${ipv6_range}${ip_list[$i]}
     wg genkey | tee cprivatekey | wg pubkey > cpublickey
 
