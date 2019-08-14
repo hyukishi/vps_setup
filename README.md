@@ -10,7 +10,7 @@ bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/englis
 bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-wlan0.sh) 9999
 ```
 
-[WireGuard](https://www.wireguard.com) installer for Ubuntu 18.04 LTS, Debian 9 and CentOS 7.
+[WireGuard](https://www.wireguard.com) installer for Raspbian Jessie.
 
 This script will let you setup your own VPN server in no more than a minute, even if you haven't used WireGuard before. It has been designed to be as unobtrusive and universal as possible.
 
