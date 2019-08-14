@@ -1,15 +1,3 @@
-# Three-in-One-Step Automated Install WireGuard Shadowsocks V2Ray on Server
-
-```
-If using wlan0 for the connected interface
-bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install.sh) [port]
-
-If using eth0 for the connected interface
-bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-eth0.sh) [port]
-```
-![](https://raw.githubusercontent.com/hongwenjun/vps_setup/master/img/vps.english.png)
-------
-
 ![](https://www.wireguard.com/img/wireguard.svg)
 
 WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-of-the-art cryptography. It aims to be faster, simpler, leaner, and more useful than IPsec, while avoiding the massive headache. It intends to be considerably more performant than OpenVPN. WireGuard is designed as a general purpose VPN for running on embedded interfaces and super computers alike, fit for many different circumstances. Initially released for the Linux kernel, it is now cross-platform (Windows, macOS, BSD, iOS, Android) and widely deployable. It is currently under heavy development, but already it might be regarded as the most secure, easiest to use, and simplest VPN solution in the industry.
@@ -17,8 +5,9 @@ WireGuard® is an extremely simple yet fast and modern VPN that utilizes state-o
 ### WireGuard Install
 
 ```
-# Custom Port Install WireGuard Script (port 9999 is used as the example on the next line)
-bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install.sh) 9999
+# Custom Port Install WireGuard Script (port 9999 used as an example on the next 2 lines. Line 1 use eth0. Line 2 use wlan0)
+bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-eth0.sh) 9999
+bash <(curl -L -s https://raw.githubusercontent.com/hyukishi/wireguard_pi/english/wireguard-install-wlan0.sh) 9999
 ```
 
 [WireGuard](https://www.wireguard.com) installer for Ubuntu 18.04 LTS, Debian 9 and CentOS 7.
